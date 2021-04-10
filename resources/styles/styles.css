@@ -1,13 +1,15 @@
 html {
-width:100%;}
-  
+width:100%;
+font-family: 'Source Sans Pro', sans-serif;}
+  /* NAVIGATION */
   nav {
       background-color: black;
-      opacity: 0.9;
       position: relative;
       height: 5rem;
       position: fixed;
       width: 100%;
+      opacity: 0.9;
+      z-index: 10;
       
   }
   #companyName1 {
@@ -20,6 +22,7 @@ width:100%;}
     margin: 10px;
     font-size: xx-large;
     line-height:3rem;
+    cursor:default;
   }
   .heat, #navEmergency { /* RED COLOR */
     color: red; 
@@ -54,7 +57,151 @@ width:100%;}
     margin: 1rem 1rem 0;
     font-size: large;
   }
+  /* NAVIGATION ENDS */
 
+
+  #home { /* BODY IMAGE AND TEXT START */
+    background-image: url(../img/StockSnap_2JMVMVE02I.png);
+    height: 60rem;
+    background-size: cover;
+  }
+  .homeText {
+    text-align: center;
+  }
+  .one {
+   padding-top: 17rem;
+   font-size: 4rem;
+   font-weight: 600;
+  }
+  .two {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .three {
+    margin-left: 40%;
+    width: fit-content;
+    font-weight: 800;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    padding:2rem;
+    font-size: 2rem;
+    border:black 1px;
+    border-radius: 8rem;
+    cursor:pointer;
+    outline: 0;
+  }
+/* BODY IMAGE AND TEXT END */
+
+.companyNameContainer { /* LEARN ABOUT REMIZON STARTS */
+  width: 100%;
+  position: relative;
+}
+.companyName2{
+  display: flex;
+  position: absolute;
+  left: 30%;
+}
+.companyName2 h1 {
+  display: flex;
+  padding: 30px;
+  cursor:default;
+  font-size: x-large;
+  font-weight: 700;
+}
+#stripe {
+  width: 100%;
+  height: 5rem;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+} 
+#aboutUs {
+  height: 40rem;
+  display: grid;
+  grid-template: repeat(22, 1fr) / repeat(20, 1fr);
+}
+
+#imgContainerAbt {
+  grid-area: 1 / 2 / span 18 / span 7;
+  background-image: url(../img/pexels-photo-5257587.jpeg);  
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+#imgContainerAbt:hover {
+  background-image:url(../img/charles-deluvio-K4mSJ7kc0As-unsplash.jpg);
+}
+#aboutFirst {
+  grid-area: 1 / 8 / span 4 / span 4;
+}
+#aboutSecond {
+  grid-area: 12 / 8 / span 4 / span 4;
+}
+
+#aboutThird {
+  grid-area: 6 / 12 / span 4 / span 4;
+}
+
+#aboutFourth {
+  grid-area: 1 / 16 / span 4 / span 4;
+}
+
+#aboutFifth {
+  grid-area: 12 / 16 / span 4 / span 4;
+
+} /* LEARN ABOUT REMIZON ENDS */
+
+#services {
+  height:1000px;
+  display: grid;
+  grid-template: repeat(38, 1fr) / repeat(19, 1fr);
+}
+#commAndResServices {
+  grid-area: 3 / 1 / span 1 / span 19;
+  text-align: center;
+  font-weight: 600;
+  font-size: x-large;
+}
+  
+  .namesColor {
+  grid-area: 1 / 1 / span 3 / span 19;
+  font-size: xx-large;
+  font-weight: 800;
+  text-align: center;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+ /* SERVICES ROUND BUTTONS START */ 
+#airConditioner{
+  background-image: url(../img/aaron-burden-cOdDOVj3FCc-unsplash.jpg);
+  grid-area: 6 / 9 / span 9 / span 3 ;
+} 
+#ductless{
+  background-image: url(../img/mak-thNJVSw73lM-unsplash.jpg);
+  grid-area: 15 / 5 / span 9 / span 3 ;
+} 
+#furnace{
+  background-image: url(../img/ricardo-gomez-angel--98jVaVuGv0-unsplash.jpg);
+  grid-area: 15 / 13 / span 9 / span 3 ;
+} 
+#ductWork {
+  background-image: url(../img/ricardo-gomez-angel-5JrUYMWGp7A-unsplash.jpg);
+  grid-area: 26 / 9 / span 9 / span 3 ;
+}
+#maintance {
+  background-image: url(../img/recha-oktaviani-t__61ap00Mc-unsplash.jpg);
+  grid-area: 16 / 9 / span 9 / span 3 ;
+}
+#airConditioner, #ductless, #furnace, #ductWork, #maintance {
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 200%;
+  border: 0;
+  cursor:pointer;
+  outline: 0;
+}
+#services h3 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+} /* SERVICES ROUND BUTTONS END */ 
 
 
 
