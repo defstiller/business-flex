@@ -1,0 +1,84 @@
+html {
+width:100%;}
+  
+  nav {
+      background-color: black;
+      opacity: 0.9;
+      position: relative;
+      height: 5rem;
+      position: fixed;
+      width: 100%;
+      
+  }
+  #companyName1 {
+    display:flex;
+    position: absolute; 
+    color: white;
+    height: 100%;
+  }   
+  #companyName1 h1 {
+    margin: 10px;
+    font-size: xx-large;
+    line-height:3rem;
+  }
+  .heat, #navEmergency { /* RED COLOR */
+    color: red; 
+  }
+  .air {
+    color: blue;
+  }
+  #navLinks {
+    display: inline-flex;
+    position: absolute;
+    left: 35%;
+  }          
+  #navLinks a {
+    color: white;
+    margin: 0 30px;
+    font-size: x-large;
+    line-height:5rem;
+  }  
+  #navLinks a:hover, #companyName1 h1:hover { /* HOVER ANIMATION */
+    animation: blur 3s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;    
+}    
+  
+  #navLinks li {
+    margin-top: 1.2rem;
+  }
+
+  #numbers {
+    color: white;
+    float: right;
+    text-align: center;
+    margin: 1rem 1rem 0;
+    font-size: large;
+  }
+
+
+
+
+
+
+
+  @keyframes blur { /* HOVER ANIMATION */
+    from {
+      text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #7B96B8,
+        0px 0px 150px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #7B96B8;
+    } }

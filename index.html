@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!-- Hello, if you're here, then you are probably interested in my coding abilities. This website is being written on 09.04.2021, it is a practice website made from scratch
-    to practice with grids, i doubt i will be adding anything extra to this project-->
 <html lang="en">
   <head>
     <title> The Best Company </title>
@@ -13,7 +11,7 @@
 
 
       <!-- GLOBAL CSS -->
-    <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="./resources/styles/reset.css">
     <link rel="stylesheet" href="./resources/styles/styles.css">
 
   </head>
@@ -21,30 +19,30 @@
  
   <body> <!-- BODY STARTS -->
     
-      
+   <div id="grid">   
   <header><!-- HEADER STARTS -->
 
     <nav> <!-- NAV STARTS -->
-      <div class="companyName">
+      <div id="companyName1">
         <h1> Remizon </h1>
         <h1 class="heat"> Heating</h1>
         <h1> and </h1>
         <h1 class="air"> Air </h1>
       </div>
+      <ul id="navLinks">
+      <li><a href="#" id="navHome"> Home </a></li>
 
-      <a href="#" id="navHome"> Home </a>
+      <li><a href="#" id="navAbout"> About Us</a></li>
 
-      <a href="#" id="navAbout"> About Us</a>
+      <li><a href="#" id="navRebates"> Rebates </a></li>
 
-      <a href="#" id="navRebates"> Rebates </a>
-
-      <a href="#" id="navServices"> Services </a>
-
-
+      <li><a href="#" id="navServices"> Services </a></li>
+      </ul>
+      <div id="numbers">
       <h1 id="navNumber"> 904-753-9267 </h1>
 
       <h2 id="navEmergency">24/7 Emergency Service Available</h2>
-
+      </div>
 
     </nav> <!-- NAV ENDS -->
 
@@ -52,7 +50,6 @@
     <section> <!-- SECTION STARTS >>> HOME / ABOUT US / REBATES / SERVICES / OFFERS -->
 
       <div id="home"> <!-- HOME IMAGE AND INFO -->
-        <img src="./resources/img/StockSnap_2JMVMVE02I.jpg">
         <h1>The Comfort Which You Deserve Is Just A Call Away</h1>
         <h2> Proudly Serving Tupelo, Baldwyn and New Albany</h2>
         <h2> CONTACT US </h2>
@@ -124,9 +121,9 @@
 
     </section>
 
-
+  
   </header><!-- HEADER ENDS-->
-    
+   </div> 
   </body><!-- BODY ENDS -->
   
 </html>
